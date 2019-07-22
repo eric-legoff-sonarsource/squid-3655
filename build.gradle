@@ -1,0 +1,28 @@
+plugins {
+  id "org.sonarqube" version "2.7.1"
+}
+
+// this in a Console application with a main method
+apply plugin: 'application'
+
+mainClassName = "com.sonarsource.support.Reproducer"
+
+repositories {
+  mavenCentral()
+}
+ 
+dependencies {
+  compile 'org.slf4j:slf4j-api:latest.release'
+  compile 'ch.qos.logback:logback-classic:1.1.6'                                                                                                                                                                 
+  compile 'ch.qos.logback:logback-core:1.1.6'  
+  testCompile 'junit:junit:latest.release'
+}
+
+
+
+
+
+
+
+
+
