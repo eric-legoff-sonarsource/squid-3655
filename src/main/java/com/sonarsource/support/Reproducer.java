@@ -12,7 +12,8 @@ public class Reproducer {
 
     public static void main(String[] args) {
         Reproducer instance = new Reproducer();
-        if (instance.getValue().isPresent() && instance.getValue().get() != null) {
+        Optional<Integer> v = instance.getValue();
+        if (v.isPresent() && v.get() != null) {
             instance.value = null;
           }
         System.out.println("Done");
